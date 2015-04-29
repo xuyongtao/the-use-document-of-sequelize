@@ -3,6 +3,10 @@
 ###1.软删除设置
   
   在对应的model文件设置 {paranoid: true};当你在model设置了后，以后的查询都不会把deleted_at不为null的数据查询出来；但有时我们需要那些被软删除的数据时，可在查询中加 {paranoid: false} 即可查出。
+  
+  软删除操作：UserModel.destroy({
+                where: { id: userId }
+            }, { force: false })
 
 ###2.多个model（表）关联有如下几个关系
 
