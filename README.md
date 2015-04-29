@@ -16,3 +16,7 @@
 
 可以用如 {include: UserModel},前提是由配置各个model（表）的关系，即第二点
 
+###4.query
+
+如果查询语句比较复杂，无法满足你的需求，可用sequelize.query('SELECT * .....')来实现
+
