@@ -7,6 +7,8 @@
   软删除操作：UserModel.destroy({
                 where: { id: userId }
             }, { force: false })
+            
+  软删除对应的恢复操作：restore方法 (http://sequelize.readthedocs.org/en/latest/api/instance/index.html?highlight=restore#restoreoptions-promiseundefined)
 
 ###2.多个model（表）关联有如下几个关系
 
