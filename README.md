@@ -8,7 +8,7 @@
                 where: { id: userId }
             }, { force: false })
             
-  软删除对应的恢复操作：restore方法 (http://sequelize.readthedocs.org/en/latest/api/instance/index.html?highlight=restore#restoreoptions-promiseundefined)
+  软删除对应的恢复操作：restore方法 (实例方法：http://sequelize.readthedocs.org/en/latest/api/instance/#restoreoptions-promiseundefined，model方法：http://sequelize.readthedocs.org/en/latest/api/model/#restoreoptions-promiseundefined)
 
 ###2.多个model（表）关联有如下几个关系
 
