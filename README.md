@@ -26,3 +26,11 @@
 
 如果查询语句比较复杂，无法满足你的需求，可用sequelize.query('SELECT * .....')来实现
 
+###5.路由配置权限（详细请查阅student-detail.ts）
+
+@route<Permission>({
+    // 添加路由相关配置
+    permission: Permission.user,
+    path: ':userId'
+})
+
